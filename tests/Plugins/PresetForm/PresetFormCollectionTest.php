@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Plugins\PresetForm;
+namespace Tests\Devian\FrontendForms\Plugins\PresetForm;
 
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFieldSettings;
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFormCollection;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFieldSettings;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFormCollection;
 use Tests\WebTestCase;
 
 /**
  * Class PresetFormCollection
- * @package Tests\AppBundle\Core\Form\Plugins\PresetForm
+ * @package Tests\Devian\FrontendForms\Plugins\PresetForm
  */
 class PresetFormCollectionTest extends WebTestCase
 {

@@ -1,26 +1,26 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Plugins\PresetForm;
+namespace Tests\Devian\FrontendForms\Plugins\PresetForm;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
-use AppBundle\Core\Form\Exceptions\FormNotValidException;
-use AppBundle\Core\Form\Fields\EmailField;
-use AppBundle\Core\Form\Fields\FieldInterface;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
-use AppBundle\Core\Form\Form;
-use AppBundle\Core\Form\FormDataInterface;
-use AppBundle\Core\Form\Plugins\PresetForm\FormWithPresetValues;
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFieldSettings;
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFormCollection;
+use Devian\FrontendForms\Exceptions\FormNotValidException;
+use Devian\FrontendForms\Fields\EmailField;
+use Devian\FrontendForms\Fields\FieldInterface;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Form;
+use Devian\FrontendForms\FormDataInterface;
+use Devian\FrontendForms\Plugins\PresetForm\FormWithPresetValues;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFieldSettings;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFormCollection;
 use Tests\WebTestCase;
-use \AppBundle\Core\Form\Plugins\PresetForm\FieldWithPresetValue;
+use \Devian\FrontendForms\Plugins\PresetForm\FieldWithPresetValue;
 
 /**
  * Class FormWithPresetValuesTest
  *
  * Декоратор для формы который устанавливает предустановленные значения
  *
- * @package AppBundle\Core\Form
+ * @package Devian\FrontendForms
  */
 class FormWithPresetValuesTest extends WebTestCase
 {

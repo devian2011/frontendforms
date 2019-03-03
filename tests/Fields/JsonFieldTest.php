@@ -1,15 +1,15 @@
 <?php
-namespace Tests\AppBundle\Core\Form\Fields;
+namespace Tests\Devian\FrontendForms\Fields;
 
 use AppBundle\Core\Data\Provider\DoctrineDataProvider;
-use AppBundle\Core\Form\Fields\JsonField;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Fields\JsonField;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Tests\WebTestCase;
 
 /**
  * Class JsonFieldTest
- * @package Tests\AppBundle\Core\Form\Fields
+ * @package Tests\Devian\FrontendForms\Fields
  */
 class JsonFieldTest extends WebTestCase
 {
@@ -18,7 +18,7 @@ class JsonFieldTest extends WebTestCase
     {
         /** @var EntityManagerInterface $em */
         $em = $this->createMock(EntityManagerInterface::class);
-        $field = new JsonField(new \AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)));
+        $field = new JsonField(new \Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)));
         $this->assertEquals($field->getFieldCode(), JsonField::CODE);
         $this->assertEquals($field->getType(), 'string');
         $this->assertEquals($field->getSubType(), 'json');
@@ -33,7 +33,7 @@ class JsonFieldTest extends WebTestCase
         $mids->method('getName')->willReturn('email');
 
         $em = $this->createMock(EntityManagerInterface::class);
-        $field = new JsonField(new \AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)), $mids);
+        $field = new JsonField(new \Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)), $mids);
         $field->setValue($in);
         $this->assertEquals($field->validate(), $out);
     }

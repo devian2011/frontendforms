@@ -1,20 +1,18 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Fields;
+namespace Tests\Devian\FrontendForms\Fields;
 
 use AppBundle\Core\Data\Provider\DoctrineDataProvider;
-use AppBundle\Core\Form\Fields\SelectField;
-use AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider;
-use AppBundle\Core\Form\Helpers\Options\OptionsInfoScheme;
-use AppBundle\Entity\Client\Client;
-use AppBundle\Entity\Client\Department;
+use Devian\FrontendForms\Fields\SelectField;
+use Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider;
+use Devian\FrontendForms\Helpers\Options\OptionsInfoScheme;
 use AppBundle\Entity\Core\Form\FieldDataHolder;
 use Doctrine\ORM\EntityManagerInterface;
 use Tests\WebTestCase;
 
 /**
  * Class LinkedOptionsTest
- * @package Tests\AppBundle\Core\Form\Fields
+ * @package Tests\Devian\FrontendForms\Fields
  */
 class LinkedOptionsTest extends WebTestCase
 {

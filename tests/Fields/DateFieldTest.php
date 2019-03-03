@@ -1,9 +1,9 @@
 <?php
-namespace Tests\AppBundle\Core\Form\Fields;
+namespace Tests\Devian\FrontendForms\Fields;
 
 use AppBundle\Core\Data\Provider\DoctrineDataProvider;
-use AppBundle\Core\Form\Fields\DateField;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Fields\DateField;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Tests\WebTestCase;
 
@@ -14,7 +14,7 @@ class DateFieldTest extends WebTestCase
     {
         /** @var EntityManagerInterface $em */
         $em = $this->createMock(EntityManagerInterface::class);
-        $field = new DateField(new \AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)));
+        $field = new DateField(new \Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)));
         $this->assertEquals($field->getFieldCode(), DateField::CODE);
         $this->assertEquals($field->getType(), 'string');
         $this->assertEquals($field->getSubType(), 'date');
@@ -29,7 +29,7 @@ class DateFieldTest extends WebTestCase
         $mids->method('getName')->willReturn('date');
 
         $em = $this->createMock(EntityManagerInterface::class);
-        $field = new DateField(new \AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)), $mids);
+        $field = new DateField(new \Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider(new DoctrineDataProvider($em)), $mids);
         $field->setValue($in);
         $this->assertEquals($field->validate(), $out);
     }

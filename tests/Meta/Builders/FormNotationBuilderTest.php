@@ -1,20 +1,20 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Meta\Builders;
+namespace Tests\Devian\FrontendForms\Meta\Builders;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
-use AppBundle\Core\Form\Fields\EmailField;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
-use AppBundle\Core\Form\Form;
-use AppBundle\Core\Form\FormDataInterface;
-use AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider;
-use AppBundle\Core\Form\Meta\Builders\FormNotationBuilder;
+use Devian\FrontendForms\Fields\EmailField;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Form;
+use Devian\FrontendForms\FormDataInterface;
+use Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider;
+use Devian\FrontendForms\Meta\Builders\FormNotationBuilder;
 use AppBundle\Entity\Core\Form\FieldDataHolder;
 use Tests\WebTestCase;
 
 /**
  * Class FormNotationBuilderTest
- * @package AppBundle\Core\Form\Meta\Builders
+ * @package Devian\FrontendForms\Meta\Builders
  */
 class FormNotationBuilderTest extends WebTestCase
 {

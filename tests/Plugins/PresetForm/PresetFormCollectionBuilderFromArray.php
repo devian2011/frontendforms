@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Plugins\PresetForm;
+namespace Tests\Devian\FrontendForms\Plugins\PresetForm;
 
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFormCollectionBuilderFromArray;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFormCollectionBuilderFromArray;
 use Tests\WebTestCase;
 
 /**
  * Class PresetFormCollectionBuilderFromArray
- * @package Tests\AppBundle\Core\Form\Plugins\PresetForm
+ * @package Tests\Devian\FrontendForms\Plugins\PresetForm
  */
 class PresetFormCollectionBuilderFromArrayTest extends WebTestCase
 {

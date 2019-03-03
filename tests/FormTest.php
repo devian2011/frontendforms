@@ -1,21 +1,21 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form;
+namespace Tests\Devian\FrontendForms;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
-use AppBundle\Core\Form\Fields\AbstractField;
-use AppBundle\Core\Form\Fields\EmailField;
-use AppBundle\Core\Form\Fields\FieldInterface;
-use AppBundle\Core\Form\Fields\FieldMapper;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
-use AppBundle\Core\Form\Exceptions\FormNotValidException;
-use AppBundle\Core\Form\Form;
-use AppBundle\Core\Form\FormDataInterface;
+use Devian\FrontendForms\Fields\AbstractField;
+use Devian\FrontendForms\Fields\EmailField;
+use Devian\FrontendForms\Fields\FieldInterface;
+use Devian\FrontendForms\Fields\FieldMapper;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Exceptions\FormNotValidException;
+use Devian\FrontendForms\Form;
+use Devian\FrontendForms\FormDataInterface;
 use Tests\WebTestCase;
 
 /**
  * Class Form
- * @package AppBundle\Core\Form
+ * @package Devian\FrontendForms
  */
 class FormTest extends WebTestCase
 {

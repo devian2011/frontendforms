@@ -1,17 +1,17 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Plugins\PresetForm;
+namespace Tests\Devian\FrontendForms\Plugins\PresetForm;
 
-use AppBundle\Core\Form\Fields\EmailField;
-use AppBundle\Core\Form\Fields\MetaInfoSafeDataInterface;
-use AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider;
-use AppBundle\Core\Form\Plugins\PresetForm\FieldWithPresetValue;
-use AppBundle\Core\Form\Plugins\PresetForm\PresetFieldSettings;
+use Devian\FrontendForms\Fields\EmailField;
+use Devian\FrontendForms\Fields\MetaInfoSafeDataInterface;
+use Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider;
+use Devian\FrontendForms\Plugins\PresetForm\FieldWithPresetValue;
+use Devian\FrontendForms\Plugins\PresetForm\PresetFieldSettings;
 use Tests\WebTestCase;
 
 /**
  * Class FieldWithPresetValue
- * @package Tests\AppBundle\Core\Form\Plugins\PresetForm
+ * @package Tests\Devian\FrontendForms\Plugins\PresetForm
  */
 class FieldWithPresetValueTest extends WebTestCase
 {

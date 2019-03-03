@@ -1,16 +1,16 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Fields;
+namespace Tests\Devian\FrontendForms\Fields;
 
 use AppBundle\Core\Data\Provider\DoctrineDataProvider;
-use AppBundle\Core\Form\Fields\CheckboxField;
-use AppBundle\Core\Form\Helpers\Options\OptionDataHelperProvider;
+use Devian\FrontendForms\Fields\CheckboxField;
+use Devian\FrontendForms\Helpers\Options\OptionDataHelperProvider;
 use Doctrine\ORM\EntityManagerInterface;
 use Tests\WebTestCase;
 
 /**
  * Class CheckboxField
- * @package AppBundle\Core\Form\Fields
+ * @package Devian\FrontendForms\Fields
  */
 class CheckboxFieldTest extends WebTestCase
 {

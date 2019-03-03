@@ -1,16 +1,15 @@
 <?php
 
-namespace AppBundle\Core\Form\Helpers\Options;
+namespace Devian\FrontendForms\Helpers\Options;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
-use AppBundle\Entity\Client\Client;
 use Doctrine\Common\Persistence\ObjectRepository;
 use PHPUnit\Framework\MockObject\MockObject;
 use Tests\WebTestCase;
 
 /**
  * Class OptionDataHelperProvider
- * @package AppBundle\Core\Form\Helpers\Options
+ * @package Devian\FrontendForms\Helpers\Options
  */
 class OptionDataHelperProviderTest extends WebTestCase
 {

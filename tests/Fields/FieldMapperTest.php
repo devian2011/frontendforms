@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\AppBundle\Core\Form\Fields;
+namespace Tests\Devian\FrontendForms\Fields;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
-use AppBundle\Core\Form\Fields\{
+use Devian\FrontendForms\Fields\{
     EmailField,
     MultiSelectField,
     NumberField,
@@ -15,13 +15,13 @@ use AppBundle\Core\Form\Fields\{
     RadioField,
     CheckboxField
 };
-use AppBundle\Core\Form\Fields\FieldMapper;
+use Devian\FrontendForms\Fields\FieldMapper;
 use Tests\WebTestCase;
 
 /**
  * Class FieldMapper
  *
- * @package AppBundle\Core\Form\Fields
+ * @package Devian\FrontendForms\Fields
  */
 class FieldMapperTest extends WebTestCase
 {

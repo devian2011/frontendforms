@@ -1,5 +1,4 @@
 <?php
-
 namespace Devian\FrontendForms;
 
 use AppBundle\Core\Data\Provider\DataProviderInterface;
